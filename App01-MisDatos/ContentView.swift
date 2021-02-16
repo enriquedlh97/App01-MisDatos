@@ -14,6 +14,7 @@ struct ContentView: View {
                 ZStack {
                     Color("Up")
                     Text("Hola Mundo")
+                        .font(.RobotoMono(size: 32))
                         .padding()
                 }
             }
@@ -21,6 +22,7 @@ struct ContentView: View {
                 ZStack {
                     Color("Down")
                     Text("Hola Mundo")
+                        .font(.RobotoRegular(size: 32))
                         .padding()
                 }
             }
