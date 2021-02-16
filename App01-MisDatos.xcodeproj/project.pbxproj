@@ -11,6 +11,7 @@
 		538ABD9725DA0C360034F15D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538ABD9625DA0C360034F15D /* ContentView.swift */; };
 		538ABD9925DA0C380034F15D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538ABD9825DA0C380034F15D /* Assets.xcassets */; };
 		538ABD9C25DA0C380034F15D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538ABD9B25DA0C380034F15D /* Preview Assets.xcassets */; };
+		53F0F20725DB6A67004AE567 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F0F20625DB6A67004AE567 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		538ABD9825DA0C380034F15D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		538ABD9B25DA0C380034F15D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		538ABD9D25DA0C380034F15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53F0F20625DB6A67004AE567 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				538ABD9425DA0C360034F15D /* App01_MisDatosApp.swift */,
 				538ABD9625DA0C360034F15D /* ContentView.swift */,
 				538ABD9825DA0C380034F15D /* Assets.xcassets */,
+				53F0F20625DB6A67004AE567 /* Colors.xcassets */,
 				538ABD9D25DA0C380034F15D /* Info.plist */,
 				538ABD9A25DA0C380034F15D /* Preview Content */,
 			);
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F0F20725DB6A67004AE567 /* Colors.xcassets in Resources */,
 				538ABD9C25DA0C380034F15D /* Preview Assets.xcassets in Resources */,
 				538ABD9925DA0C380034F15D /* Assets.xcassets in Resources */,
 			);
