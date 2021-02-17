@@ -22,11 +22,10 @@ struct ContentView: View {
                 VStack {
                     ZStack {
                         Color("Down")
-                        HStack {
-                            Image(systemName: "person.fill")
-                            Text("Hola Mundo")
-                                .font(.RobotoRegular(size: 32))
-                                .padding()
+                        VStack {
+                            DataView(texto: "Enrique Diaz de Leon Hicks")                            .padding(.top, 20)
+                            DataView(texto: "B.S. Business Informatics", imagen: "network")
+                            DataView(texto: "enriquedlh97@hotmail.com", imagen: "envelope")
                         }
                     }
                 }
