@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    //@State refhreses screen every time this variable changes
+    @State var showImage: Bool = false
+    
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
@@ -32,11 +36,20 @@ struct ContentView: View {
             }
             .edgesIgnoringSafeArea(.all)
             VStack {
-                Image("Plane")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width:200)
+                Button(action: {
+                    showImage.toggle()
+                    print("Hola")
+                }){
+                    Image("Plane")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width:200)
+                }
+                
             }
+        }
+        .sheet(isPresented: $showImage) {
+            ImageView()
         }
         
     }
