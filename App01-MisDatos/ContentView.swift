@@ -33,7 +33,7 @@ struct ContentView: View {
             }
             .edgesIgnoringSafeArea(.all)
             VStack {
-                Image("PaperPlane")
+                Image("Plane")
                     .resizable()
                     .scaledToFit()
                     .frame(width:200)
