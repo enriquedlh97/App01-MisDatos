@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		535F731F25DD807900296826 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F731E25DD807900296826 /* DataView.swift */; };
 		535F732225DD896000296826 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F732125DD896000296826 /* ImageView.swift */; };
+		535F732525DD9AEE00296826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F732425DD9AEE00296826 /* ViewController.swift */; };
 		538ABD9525DA0C360034F15D /* App01_MisDatosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538ABD9425DA0C360034F15D /* App01_MisDatosApp.swift */; };
 		538ABD9725DA0C360034F15D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538ABD9625DA0C360034F15D /* ContentView.swift */; };
 		538ABD9925DA0C380034F15D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538ABD9825DA0C380034F15D /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		535F731E25DD807900296826 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		535F732125DD896000296826 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		535F732425DD9AEE00296826 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		538ABD9125DA0C360034F15D /* App01-MisDatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App01-MisDatos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		538ABD9425DA0C360034F15D /* App01_MisDatosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App01_MisDatosApp.swift; sourceTree = "<group>"; };
 		538ABD9625DA0C360034F15D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				53F0F20625DB6A67004AE567 /* Colors.xcassets */,
 				538ABD9D25DA0C380034F15D /* Info.plist */,
 				538ABD9A25DA0C380034F15D /* Preview Content */,
+				535F732425DD9AEE00296826 /* ViewController.swift */,
 			);
 			path = "App01-MisDatos";
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535F732525DD9AEE00296826 /* ViewController.swift in Sources */,
 				535F732225DD896000296826 /* ImageView.swift in Sources */,
 				538ABD9725DA0C360034F15D /* ContentView.swift in Sources */,
 				538E78CC25DC7BD30018878E /* Fonts.swift in Sources */,

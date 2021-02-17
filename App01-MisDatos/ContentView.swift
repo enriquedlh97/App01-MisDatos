@@ -11,15 +11,16 @@ struct ContentView: View {
     
     //@State refhreses screen every time this variable changes
     @State var showImage: Bool = false
-    
+
     var body: some View {
+        
         ZStack {
             VStack(spacing: 0) {
                 VStack {
                     ZStack {
                         Color("Up")
-                        Text("Hola Mundo")
-                            .font(.RobotoMono(size: 32))
+                        Text("My info")
+                            .font(.RobotoMono(size: 50))
                             .padding()
                     }
                 }
@@ -27,9 +28,10 @@ struct ContentView: View {
                     ZStack {
                         Color("Down")
                         VStack {
-                            DataView(texto: "Enrique Diaz de Leon Hicks")                            .padding(.top, 20)
+                            DataView(texto: "Enrique Diaz de Leon Hicks")                            .padding(.top, 90)
                             DataView(texto: "B.S. Business Informatics", imagen: "network")
                             DataView(texto: "enriquedlh97@hotmail.com", imagen: "envelope")
+                            DataView(texto: "Aguascalientes", imagen: "house.fill")
                         }
                     }
                 }

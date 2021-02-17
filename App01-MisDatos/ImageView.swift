@@ -9,10 +9,16 @@ import SwiftUI
 
 struct ImageView: View {
     var body: some View {
-        VStack {
-            Image("BigPlane")
-                .resizable()
-                .scaledToFit()
+        ZStack {
+            Color("Down")
+            VStack {
+                Image("BigPlane")
+                    .resizable()
+                    .scaledToFit()
+                Text("Have a nice day!")
+                    .font(.RobotoRegular(size: 30))
+                    .padding()
+            }
         }
     }
 }
@@ -22,3 +28,5 @@ struct ImageView_Previews: PreviewProvider {
         ImageView()
     }
 }
+
+
