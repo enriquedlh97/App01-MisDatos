@@ -16,7 +16,7 @@ struct DataView: View {
         HStack {
             Image(systemName: imagen)
                 .font(.title)
-                .foregroundColor(Color("Up"))
+                .foregroundColor(.white)
             Text(texto)
                 .font(.RobotoRegular(size: 25))
                 .padding()
