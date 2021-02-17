@@ -33,10 +33,7 @@ struct ContentView: View {
             }
             .edgesIgnoringSafeArea(.all)
             VStack {
-                let processor = IconMaker()
-                let FinalIamge = Image("WorldPlane")
-                let abc = processor.makeIcon(with: UIColor, size: CGSize, icon: FinalIamge)
-                Image("WorldPlane")
+                Image("PaperPlane")
                     .resizable()
                     .scaledToFit()
                     .frame(width:200)
@@ -52,38 +49,4 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-import UIKit
 
-struct IconMaker {
-
-    func makeIcon(with color: UIColor, size: CGSize, icon: UIImage = UIImage(named: "iconEmpty.png")!) -> UIImage {
-
-        // Make solid color background
-        let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
-        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
-        color.setFill()
-        UIRectFill(rect)
-        let backgroundImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-
-        // Add other image (which has transparency)
-        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
-        backgroundImage.draw(in: rect, blendMode: .normal, alpha: 1)
-
-        icon.draw(in: rect, blendMode: .normal, alpha: 1)
-
-        let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-
-        // Circular mask
-        let cornerRadius = newImage.size.height/2
-        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
-        let bounds = CGRect(origin: CGPoint.zero, size: size)
-        UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).addClip()
-        newImage.draw(in: bounds)
-        let finalImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-
-        return finalImage!
-    }
-}
